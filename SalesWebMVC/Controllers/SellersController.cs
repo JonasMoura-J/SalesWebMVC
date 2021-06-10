@@ -18,7 +18,12 @@ namespace SalesWebMVC.Controllers
         public IActionResult Index()
         {
             var list = _selerService.FindAll();
-            return View(list);
+            return View(list);  
+        }
+
+        public IActionResult create()
+        {
+            return View();
         }
     }
 }
